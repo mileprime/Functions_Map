@@ -16,6 +16,13 @@ let users = [
   },
 ];
 
+let updatedUser = users.forEach((user) => {
+  if (user.name == "Ali") {
+    return { ...user, age: 9 };
+  } else return user;
+});
+console.log(updatedUser);
+
 // let updatedUser = users.map((user, index) => {
 //   if (index == 0) {
 //     return { ...user, age: user.age + 7, college: "School" };
@@ -27,9 +34,9 @@ let users = [
 // console.log(updatedUser, "new array");
 // console.log(users.length, "new array");
 
-let updatedUser = users.map((user, index) => {
-  // delete user.collage;
-  return { ...user, college: "school" };
-});
-console.log(updatedUser, "new array");
-console.log(users.length, "new array");
+// let updatedUser = users.map((user, index) => {
+//   // delete user.collage;
+//   return { ...user, college: "school" };
+// });
+// console.log(updatedUser, "new array");
+// console.log(users.length, "new array");
