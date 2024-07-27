@@ -23,12 +23,18 @@ let users = [
  * Delete using filter
  * User id not equal to id(to be deleted)
  */
-
 let deleetingid = 44;
 let updatedUsers = users.filter((user) => {
-  return user.id != deleetingid;
+  //   return user.id != deleetingid;
+  return user.age > 12;
 });
-console.log(updatedUsers, users);
+console.log(updatedUsers);
+
+// let deleetingid = 44;
+// let updatedUsers = users.filter((user) => {
+//   return user.id != deleetingid;
+// });
+// console.log(updatedUsers, users);
 
 /**
  * create new array for forEach method
