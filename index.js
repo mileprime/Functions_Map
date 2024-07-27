@@ -28,7 +28,7 @@ let deleetingid = 44;
 let updatedUsers = users.filter((user) => {
   return user.id != deleetingid;
 });
-console.log(updatedUsers);
+console.log(updatedUsers, users);
 
 /**
  * create new array for forEach method
