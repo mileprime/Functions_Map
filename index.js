@@ -16,10 +16,14 @@ let users = [
   },
 ];
 
-let updatedUser = users.forEach((user) => {
+//create new array for forEach method
+//use push instead of return for forEach Method
+
+let updatedUser = [];
+users.forEach((user) => {
   if (user.name == "Ali") {
-    return { ...user, age: 9 };
-  } else return user;
+    updatedUser.push({ ...user, age: 9 });
+  } else updatedUser.push(user);
 });
 console.log(updatedUser);
 
