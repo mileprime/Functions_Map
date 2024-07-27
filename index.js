@@ -8,3 +8,13 @@ let users = [
     age: 30,
   },
 ];
+
+let updatedUser = users.map((user, index) => {
+  if (index == 0) {
+    return { ...user, age: user.age + 7 };
+    //user.age is the value of the key, age
+  } else {
+    return user;
+  }
+});
+console.log(updatedUser, "new array");
