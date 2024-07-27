@@ -18,3 +18,4 @@ let updatedUser = users.map((user, index) => {
   }
 });
 console.log(updatedUser, "new array");
+console.log(users.length, "new array");
